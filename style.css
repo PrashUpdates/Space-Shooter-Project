@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+    user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+}
+
+body{
+    background:black;
+    color:white;
+    text-align:center;
+    font-family:Arial,sans-serif;
+}
+
+h1{
+    margin:15px 0;
+}
+
+#score{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+#game-board{
+
+    width:400px;
+    height:600px;
+
+    margin:auto;
+
+    position:relative;
+    overflow:hidden;
+
+    border:2px solid white;
+
+    background:
+    radial-gradient(circle at 20% 20%, white 1px, transparent 2px),
+    radial-gradient(circle at 80% 40%, white 1px, transparent 2px),
+    radial-gradient(circle at 50% 80%, white 1px, transparent 2px),
+    radial-gradient(circle at 30% 60%, white 1px, transparent 2px),
+    radial-gradient(circle at 70% 10%, white 1px, transparent 2px),
+    linear-gradient(to bottom,#000814,#001d3d,#000814);
+}
+
+.ship{
+
+    width:40px;
+    height:50px;
+
+    position:absolute;
+
+    background:linear-gradient(
+    to top,
+    #003cff,
+    #00bfff
+    );
+
+    clip-path:polygon(
+    50% 0%,
+    100% 100%,
+    50% 80%,
+    0% 100%
+    );
+
+    box-shadow:0 0 15px #00bfff;
+}
+
+.enemy{
+
+    width:35px;
+    height:40px;
+
+    position:absolute;
+
+    background:linear-gradient(
+    to top,
+    #7a0000,
+    red
+    );
+
+    clip-path:polygon(
+    50% 100%,
+    100% 0%,
+    50% 20%,
+    0% 0%
+    );
+
+    box-shadow:0 0 10px red;
+}
+
+.bullet{
+
+    width:6px;
+    height:15px;
+
+    position:absolute;
+
+    background:yellow;
+
+    border-radius:5px;
+
+    box-shadow:0 0 10px yellow;
+}
+
+.controls{
+    margin-top:15px;
+}
+
+.controls button{
+
+    width:90px;
+    height:60px;
+
+    margin:5px;
+
+    font-size:20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#222;
+
+    color:white;
+
+    touch-action:manipulation;
+}
+
+.controls button:active{
+
+    transform:scale(0.95);
+
+    background:#444;
+}
+
+#gameOverScreen{
+
+    position:fixed;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:300px;
+
+    background:#111;
+
+    border:2px solid red;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:white;
+
+    display:none;
+
+    z-index:9999;
+
+    box-shadow:0 0 25px red;
+}
+
+#gameOverScreen h2{
+
+    color:red;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+    letter-spacing:2px;
+}
+
+#gameOverScreen p{
+
+    font-size:22px;
+
+    margin-bottom:20px;
+}
+
+#gameOverScreen button{
+
+    width:180px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:red;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+#gameOverScreen button:active{
+
+    transform:scale(0.97);
+}

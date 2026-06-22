@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Space Shooter</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body oncontextmenu="return false;">
+
+    <h1>Space Shooter</h1>
+
+    <div id="score">
+        Score: 0
+    </div>
+
+    <div id="game-board"></div>
+
+    <div id="gameOverScreen">
+
+        <h2>GAME OVER</h2>
+
+        <p id="finalScore">
+            Score: 0
+        </p>
+
+        <button id="restartBtn">
+            PLAY AGAIN
+        </button>
+
+    </div>
+
+    <div class="controls">
+
+        <button id="leftBtn">
+            ◀
+        </button>
+
+        <button id="fireBtn">
+            FIRE
+        </button>
+
+        <button id="rightBtn">
+            ▶
+        </button>
+
+    </div>
+
+    <script type="module"
+            src="game.js">
+    </script>
+
+</body>
+
+</html>
