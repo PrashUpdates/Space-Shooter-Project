@@ -19,7 +19,6 @@
 - Left/right ship movement + fire bullets
 - Random enemy spawns with collision detection
 - Score tracking + Game Over screen
-- Touch controls, space-themed visuals
 
 
 <h3>⭐ Beginner-friendly UI project.</h3>
