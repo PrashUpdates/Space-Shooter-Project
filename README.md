@@ -22,4 +22,4 @@
 - Touch controls, space-themed visuals
 
 
-<h3> ⭐ Star it if you find it useful. </h3>
+<h3>⭐ Beginner-friendly UI project.</h3>
